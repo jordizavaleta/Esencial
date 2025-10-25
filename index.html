@@ -6,6 +6,8 @@
   <title>Esencial | Lo esencial en el momento exacto</title>
   <link rel="stylesheet" href="css/index.css">
   <link rel="icon" type="image/png" href="logo-esencial.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
 </head>
 <body>
   <!-- ===== HEADER ===== -->
@@ -14,7 +16,11 @@
       <div class="header__logo">
         <img src="img/logo-esencial.png" alt="Logo Esencial">
       </div>
-      <nav class="header__nav">
+        <button class="menu-toggle" id="abrir"><i class="bi bi-list"></i>
+        </button>
+
+      <nav class="nav" id="nav">
+        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-lg"></i></button>
         <ul class="nav__list">
           <li class="nav__item"><a href="#inicio" class="nav__link">Inicio</a></li>
           <li class="nav__item"><a href="#productos" class="nav__link">Productos</a></li>
@@ -28,7 +34,7 @@
   <!-- ===== HERO ===== -->
   <section id="inicio" class="hero">
     <div class="hero__content">
-      <h1 class="hero__title">Lo esencial, en el momento exacto</h1>
+      <h1 class="hero__title">Lo Esencial, en el momento exacto</h1>
       <p class="hero__text">Tu tienda moderna de productos de primera necesidad con entrega rápida y confiable.</p>
       <a href="#productos" class="hero__btn">Descubre más</a>
     </div>
@@ -102,6 +108,6 @@
       <p class="footer__text">Hecho con ❤️ para hogares, familias y jóvenes.</p>
     </div>
   </footer>
+  <script src="js/java.js" ></script>
 </body>
-
 </html>
