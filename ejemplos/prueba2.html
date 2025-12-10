@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+/* Definición de la animación con @keyframes */
+@keyframes movimientoCompleto {
+  			0% {
+				transform: translateX(0) ;
+				background-color: red;
+  			}
+  			25% {
+				transform: translateX(100px);
+				background-color: blue;
+  			}
+  			50% {
+				transform: translateX(200px);
+				background-color: yellow;
+  			}
+  			75% {
+				transform: translateX(100px);
+			background-color: green;
+  			}
+  			100% {
+				transform: translateX(0);
+				background-color: red;
+  			}
+}
+ 
+/* Aplicación de la animación */
+.caja-animada {
+  		width: 100px;
+height: 100px;
+background-color: red;
+ 
+ 		animation-name: movimientoCompleto;  /*Nombre de la animación*/
+animation-duration: 3s;   /* Duración total */
+  		animation-delay: 1s;       /* Tiempo antes de iniciar */
+  		animation-iteration-count: infinite;   /* Repetición infinita */
+  	animation-direction: alternate;        /* Va y regresa */
+  	animation-timing-function: ease-in-out;  /* Velocidad gradual */
+  		animation-fill-mode: forwards;           /* Mantiene su estado final */
+}
+	</style>
+</head>
+<body>
+	<h1>Efecto de animación</h1>
+	<div class="caja-animada" ></div>
+</body>
+</html>
